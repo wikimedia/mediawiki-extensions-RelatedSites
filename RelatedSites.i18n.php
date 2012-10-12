@@ -26,4 +26,3 @@ $messages['it'] = array(
 	'rs-RelatedSites' => 'Altri siti',
 );
 
-?>
