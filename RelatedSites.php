@@ -25,9 +25,9 @@ class RelatedSites {
 		# error_log( "Call RelatedSites constructor:" . $this->hmcounter, 0);
 	}
 
-	#
-	#	Pick out formal interlanguage links that are actualy related sites.
-	#
+	/**
+	 * Picks out formal interlanguage links that are actualy related sites.
+	 */
 	function onParserBeforeTidy( &$parser, &$text ) {
 		global $wgCustomData, $wgRelatedSitesPrefixes;
 
@@ -56,10 +56,10 @@ class RelatedSites {
 		return true;
 	}
 
-	#
-	# Hooked in from hook SkinTemplateOutputPageBeforeExec.
-	# Preprocess related sites links.
-	#
+	/**
+	 * Hooked in from hook SkinTemplateOutputPageBeforeExec.
+	 * Preprocess related sites links.
+	 */
 	function onSkinTemplateOutputPageBeforeExec( &$SkTmpl, &$QuickTmpl ) {
 		global $wgCustomData, $wgOut;
 		global $wgContLang;
@@ -85,9 +85,9 @@ class RelatedSites {
 		return true;
 	}
 
-	#
-	# Write out HTML-code.
-	#
+	/**
+	 * Write out HTML-code.
+	 */
 	function onSkinTemplateToolboxEnd( &$skTemplate ) {
 		global $wgCustomData;
 

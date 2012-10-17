@@ -17,7 +17,7 @@ $messages['en'] = array(
  * @author Raymond
  */
 $messages['qqq'] = array(
-	'relatedsites-sidebartext' => 'Shown on the sidebar',
+	'relatedsites-sidebartext' => 'Link in the sidebar to go to related sites',
 	'relatedsites-desc' => '{{desc}}',
 );
 
@@ -48,6 +48,7 @@ $messages['es'] = array(
  */
 $messages['fr'] = array(
 	'relatedsites-sidebartext' => 'Autres sites',
+	'relatedsites-desc' => 'Ajoute un lien vers les sites connexes dans la sidebar',
 );
 
 /** Galician (galego)
