@@ -12,10 +12,11 @@ $wgExtensionMessagesFiles['RelatedSites'] = $dir . 'RelatedSites.i18n.php';
 $wgExtensionFunctions[] = 'wfSetupRelatedSites';
 
 $wgExtensionCredits['parserhook']['RelatedSites'] = array(
+	'path' => __FILE__,
 	'name' => 'RelatedSites',
 	'url' => 'http://wikivoyage.org/tech/RelatedSites-Extension',
-	'author' => 'Roland Unger/Hans Musil',
-	'descriptionmsg' => 'rs-desc'
+	'author' => array( 'Roland Unger', 'Hans Musil' ),
+	'descriptionmsg' => 'relatedsites-desc'
 );
 
 
@@ -97,7 +98,7 @@ class RelatedSites {
 		</div>
 		</div>
 		<div id="p-lang" class="portal">
-				<h5><?php $skTemplate->msg( 'rs-RelatedSites' ) ?></h5>
+				<h5><?php $skTemplate->msg( 'relatedsites-sidebartext' ) ?></h5>
 				<div class="body">
 						<ul>
 <?php
