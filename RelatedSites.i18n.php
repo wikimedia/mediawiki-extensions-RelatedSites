@@ -32,9 +32,20 @@ $messages['fr'] = array(
 	'relatedsites-sidebartext' => 'Autres sites',
 );
 
-/** Italian (italiano) */
+/** Italian (italiano)
+ * @author Beta16
+ */
 $messages['it'] = array(
 	'relatedsites-sidebartext' => 'Altri siti',
+	'relatedsites-desc' => 'Aggiunge un collegamento ai siti correlati nella barra laterale',
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'relatedsites-sidebartext' => '関連サイト',
+	'relatedsites-desc' => '関連サイトへのリンクをサイドバーに追加する',
 );
 
 /** Macedonian (македонски)
