@@ -27,9 +27,33 @@ $messages['de'] = array(
 	'relatedsites-desc' => 'Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar',
 );
 
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'relatedsites-sidebartext' => 'Sitios relacionados',
+	'relatedsites-desc' => 'Añace un enlace a los sitios relacionados en la barra lateral',
+);
+
 /** French (français) */
 $messages['fr'] = array(
 	'relatedsites-sidebartext' => 'Autres sites',
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'relatedsites-sidebartext' => 'Sitios relacionados',
+	'relatedsites-desc' => 'Engade unha ligazón cara aos sitios relacionados na barra lateral',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'relatedsites-sidebartext' => 'Přiwuzne sydła',
+	'relatedsites-desc' => 'Přidawa wotkaz k přiwuznym sydłam na bóčnicy',
 );
 
 /** Italian (italiano)
