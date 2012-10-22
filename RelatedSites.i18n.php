@@ -21,7 +21,8 @@ $messages['qqq'] = array(
 	'relatedsites-desc' => '{{desc}}',
 );
 
-/** German (Deutsch) */
+/** German (Deutsch)
+ */
 $messages['de'] = array(
 	'relatedsites-sidebartext' => 'Verwandte Sites',
 	'relatedsites-desc' => 'Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar',
@@ -35,7 +36,8 @@ $messages['es'] = array(
 	'relatedsites-desc' => 'Añace un enlace a los sitios relacionados en la barra lateral',
 );
 
-/** French (français) */
+/** French (français)
+ */
 $messages['fr'] = array(
 	'relatedsites-sidebartext' => 'Autres sites',
 );
@@ -79,4 +81,3 @@ $messages['mk'] = array(
 	'relatedsites-sidebartext' => 'Поврзани м-ж места',
 	'relatedsites-desc' => 'Во страничната лента додава врска за поврзани мрежни места',
 );
-
