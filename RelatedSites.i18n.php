@@ -21,6 +21,14 @@ $messages['qqq'] = array(
 	'relatedsites-desc' => '{{desc}}',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'relatedsites-sidebartext' => 'Sitios rellacionaos',
+	'relatedsites-desc' => 'Amiesta un enllaz a sitios rellacionaos na barra llateral',
+);
+
 /** German (Deutsch)
  */
 $messages['de'] = array(
@@ -72,6 +80,14 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'relatedsites-sidebartext' => '関連サイト',
 	'relatedsites-desc' => '関連サイトへのリンクをサイドバーに追加する',
+);
+
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'relatedsites-sidebartext' => '관련 사이트',
+	'relatedsites-desc' => '사이드바에 관련된 사이트의 링크 추가',
 );
 
 /** Macedonian (македонски)
