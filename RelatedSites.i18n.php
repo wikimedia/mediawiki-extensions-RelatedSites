@@ -98,3 +98,11 @@ $messages['mk'] = array(
 	'relatedsites-sidebartext' => 'Поврзани м-ж места',
 	'relatedsites-desc' => 'Во страничната лента додава врска за поврзани мрежни места',
 );
+
+/** Dutch (Nederlands)
+ * @author Wiki13
+ */
+$messages['nl'] = array(
+	'relatedsites-sidebartext' => 'Gerelateerde plaatsen',
+	'relatedsites-desc' => 'Voegt een link toe naar gerelateerde plaatsen in de navigatiekolom',
+);
