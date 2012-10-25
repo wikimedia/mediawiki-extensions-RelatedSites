@@ -100,9 +100,10 @@ $messages['mk'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author Siebrand
  * @author Wiki13
  */
 $messages['nl'] = array(
-	'relatedsites-sidebartext' => 'Gerelateerde plaatsen',
-	'relatedsites-desc' => 'Voegt een link toe naar gerelateerde plaatsen in de navigatiekolom',
+	'relatedsites-sidebartext' => 'Gerelateerde sites',
+	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
 );
