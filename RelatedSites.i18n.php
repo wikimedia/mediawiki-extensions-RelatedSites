@@ -107,3 +107,11 @@ $messages['nl'] = array(
 	'relatedsites-sidebartext' => 'Gerelateerde sites',
 	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'relatedsites-sidebartext' => '相关站点',
+	'relatedsites-desc' => '在侧栏上添加相关站点的链接',
+);
