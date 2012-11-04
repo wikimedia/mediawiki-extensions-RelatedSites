@@ -112,6 +112,6 @@ $messages['nl'] = array(
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'relatedsites-sidebartext' => '相关站点',
+	'relatedsites-title' => '相关站点',
 	'relatedsites-desc' => '在侧栏上添加相关站点的链接',
 );
