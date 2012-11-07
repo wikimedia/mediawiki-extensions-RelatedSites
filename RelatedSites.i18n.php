@@ -59,6 +59,14 @@ $messages['gl'] = array(
 	'relatedsites-desc' => 'Engade unha ligazón cara aos sitios relacionados na barra lateral',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'relatedsites-title' => 'אתרים קשורים',
+	'relatedsites-desc' => 'הוספת קישור לאתרים קשורים בסרגל הצד',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -97,6 +105,14 @@ $messages['ko'] = array(
 $messages['mk'] = array(
 	'relatedsites-title' => 'Поврзани м-ж места',
 	'relatedsites-desc'  => 'Во страничната лента додава врска за поврзани мрежни места',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'relatedsites-title' => 'Tapak berkaitan',
+	'relatedsites-desc' => 'Menambahkan pautan ke tapak-tapak berkaitan pada palang sisi',
 );
 
 /** Dutch (Nederlands)
