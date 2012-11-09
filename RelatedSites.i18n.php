@@ -79,7 +79,7 @@ $messages['hsb'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
-	'relatedsites-title' => 'Altri siti',
+	'relatedsites-title' => 'Siti correlati',
 	'relatedsites-desc' => 'Aggiunge un collegamento ai siti correlati nella barra laterale',
 );
 
@@ -122,6 +122,14 @@ $messages['ms'] = array(
 $messages['nl'] = array(
 	'relatedsites-sidebartext' => 'Gerelateerde sites',
 	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'relatedsites-title' => 'Site liên quan',
+	'relatedsites-desc' => 'Thêm liên kết đến các site liên quan vào thanh bên',
 );
 
 /** Simplified Chinese (中文（简体）‎)
