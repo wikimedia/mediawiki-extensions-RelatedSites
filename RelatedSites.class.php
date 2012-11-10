@@ -2,13 +2,14 @@
 
 class RelatedSites {
 	/**
+	 * @throws MWException
 	 * @return CustomData
 	 */
 	public function getCustomData() {
 		global $wgCustomData;
 
 		if ( !$wgCustomData instanceof CustomData ) {
-			throw new Exception( 'CustomData extension is not properly installed.' );
+			throw new MWException( 'CustomData extension is not properly installed.' );
 		}
 
 		return $wgCustomData;
@@ -30,17 +31,17 @@ class RelatedSites {
 
 		$relatedSitesSet = array();
 
-		foreach ( $parser->mOutput->mLanguageLinks as $i => $languageLink ) {
+		foreach ( $parser->getOutput()->getLanguageLinks() as $i => $languageLink ) {
 			$tmp = explode( ':', $languageLink, 2 );
 
 			if ( in_array( $tmp[0], $wgRelatedSitesPrefixes ) ) {
-				unset( $parser->mOutput->mLanguageLinks[$i] );
+				unset( $parser->getOutput()->mLanguageLinks[$i] );
 				$relatedSitesSet[] = $languageLink;
 			}
 		}
 
 		if ( $relatedSitesSet ) {
-			$this->getCustomData()->setParserData( $parser->mOutput, 'RelatedSites', $relatedSitesSet );
+			$this->getCustomData()->setParserData( $parser->getOutput(), 'RelatedSites', $relatedSitesSet );
 		}
 
 		return true;
