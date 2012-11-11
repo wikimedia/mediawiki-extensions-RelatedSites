@@ -15,10 +15,11 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Raymond
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'relatedsites-title' => 'Link in the sidebar to go to related sites',
-	'relatedsites-desc' => '{{desc}}',
+	'relatedsites-desc' => '{{desc|name=Related Sites|url=http://www.mediawiki.org/wiki/Extension:RelatedSites}}',
 );
 
 /** Asturian (asturianu)
