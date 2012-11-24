@@ -30,6 +30,14 @@ $messages['ast'] = array(
 	'relatedsites-desc' => 'Amiesta un enllaz a sitios rellacionaos na barra llateral',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'relatedsites-title' => "Lec'hiennoù kar",
+	'relatedsites-desc' => "Ouzhpennañ ul liamm er barenn-gostez davet al lec'hiennoù kar",
+);
+
 /** German (Deutsch)
  */
 $messages['de'] = array(
