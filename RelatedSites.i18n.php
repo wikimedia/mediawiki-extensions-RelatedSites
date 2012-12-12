@@ -133,6 +133,14 @@ $messages['nl'] = array(
 	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
 );
 
+/** Russian (русский)
+ * @author Kaganer
+ */
+$messages['ru'] = array(
+	'relatedsites-title' => 'Связанные сайты',
+	'relatedsites-desc' => 'Добавляет ссылку на связанные сайты на боковую панель',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
