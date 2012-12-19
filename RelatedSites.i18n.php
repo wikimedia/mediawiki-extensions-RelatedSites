@@ -141,6 +141,14 @@ $messages['ru'] = array(
 	'relatedsites-desc' => 'Добавляет ссылку на связанные сайты на боковую панель',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'relatedsites-title' => "Пов'язані сайти",
+	'relatedsites-desc' => "Додає посилання на пов'язані сайти на бічну панель",
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  */
