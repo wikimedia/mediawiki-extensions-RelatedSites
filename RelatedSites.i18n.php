@@ -129,7 +129,7 @@ $messages['ms'] = array(
  * @author Wiki13
  */
 $messages['nl'] = array(
-	'relatedsites-sidebartext' => 'Gerelateerde sites',
+	'relatedsites-title' => 'Gerelateerde sites',
 	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
 );
 
@@ -139,6 +139,13 @@ $messages['nl'] = array(
 $messages['ru'] = array(
 	'relatedsites-title' => 'Связанные сайты',
 	'relatedsites-desc' => 'Добавляет ссылку на связанные сайты на боковую панель',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'relatedsites-title' => 'ආශ්‍රිත අඩවි',
 );
 
 /** Ukrainian (українська)
