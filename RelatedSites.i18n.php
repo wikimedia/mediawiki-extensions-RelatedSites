@@ -133,6 +133,14 @@ $messages['nl'] = array(
 	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
 );
 
+/** Polish (polski)
+ * @author Matma Rex
+ */
+$messages['pl'] = array(
+	'relatedsites-title' => 'Powiązane serwisy',
+	'relatedsites-desc' => 'Dodaje link do powiązanych serwisów w menu bocznym',
+);
+
 /** Russian (русский)
  * @author Kaganer
  */
