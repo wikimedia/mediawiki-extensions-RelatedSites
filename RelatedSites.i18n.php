@@ -156,6 +156,13 @@ $messages['si'] = array(
 	'relatedsites-title' => 'ආශ්‍රිත අඩවි',
 );
 
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'relatedsites-title' => 'தொடர்புடைய தளங்கள்',
+);
+
 /** Ukrainian (українська)
  * @author Base
  */
