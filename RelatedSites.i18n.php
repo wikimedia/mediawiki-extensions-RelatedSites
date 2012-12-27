@@ -53,6 +53,14 @@ $messages['es'] = array(
 	'relatedsites-desc' => 'Añace un enlace a los sitios relacionados en la barra lateral',
 );
 
+/** Finnish (suomi)
+ * @author VezonThunder
+ */
+$messages['fi'] = array(
+	'relatedsites-title' => 'Samankaltaiset sivustot',
+	'relatedsites-desc' => 'Lisää sivupalkkiin linkin samankaltaisille sivustoille',
+);
+
 /** French (français)
  */
 $messages['fr'] = array(
