@@ -38,6 +38,13 @@ $messages['br'] = array(
 	'relatedsites-desc' => "Ouzhpennañ ul liamm er barenn-gostez davet al lec'hiennoù kar",
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'relatedsites-title' => 'Související stránky',
+);
+
 /** German (Deutsch)
  */
 $messages['de'] = array(
@@ -138,7 +145,7 @@ $messages['ms'] = array(
  */
 $messages['nl'] = array(
 	'relatedsites-title' => 'Gerelateerde sites',
-	'relatedsites-desc' => 'Voegt een verwijzing toe naar gerelateerde sites in de navigatiekolom',
+	'relatedsites-desc' => 'Voegt een koppeling toe naar gerelateerde sites in de navigatiekolom',
 );
 
 /** Polish (polski)
