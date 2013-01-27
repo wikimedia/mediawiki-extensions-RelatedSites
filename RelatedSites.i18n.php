@@ -49,7 +49,7 @@ $messages['cs'] = array(
  */
 $messages['de'] = array(
 	'relatedsites-title' => 'Verwandte Sites',
-	'relatedsites-desc'  => 'Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar',
+	'relatedsites-desc' => 'Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar',
 );
 
 /** Spanish (español)
@@ -128,7 +128,7 @@ $messages['ko'] = array(
  */
 $messages['mk'] = array(
 	'relatedsites-title' => 'Поврзани м-ж места',
-	'relatedsites-desc'  => 'Во страничната лента додава врска за поврзани мрежни места',
+	'relatedsites-desc' => 'Во страничната лента додава врска за поврзани мрежни места',
 );
 
 /** Malay (Bahasa Melayu)
