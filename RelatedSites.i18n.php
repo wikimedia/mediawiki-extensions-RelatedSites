@@ -157,11 +157,20 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'relatedsites-title' => 'Sit colegà',
-	'relatedsites-desc' => 'A gionta un colegament ai sit colegà dzor la bara lateral',
+	'relatedsites-desc' => 'A gionta na liura ai sit colegà ant la bara lateral',
+);
+
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'relatedsites-title' => 'Site collegate',
+	'relatedsites-desc' => "Aggiugne 'nu collegamende a le site collegate sus 'a barre laterale",
 );
 
 /** Russian (русский)
