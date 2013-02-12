@@ -115,6 +115,13 @@ $messages['ja'] = array(
 	'relatedsites-desc' => '関連サイトへのリンクをサイドバーに追加する',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'relatedsites-title' => 'დაკავშირებული საიტები',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
