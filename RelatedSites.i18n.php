@@ -130,6 +130,14 @@ $messages['ko'] = array(
 	'relatedsites-desc' => '사이드바에 관련된 사이트의 링크 추가',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'relatedsites-title' => 'Situs takaik',
+	'relatedsites-desc' => 'Manambahan pautan ka situs takaik pado sidebar',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
