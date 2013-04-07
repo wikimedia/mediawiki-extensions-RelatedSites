@@ -233,3 +233,11 @@ $messages['zh-hans'] = array(
 	'relatedsites-title' => '相关站点',
 	'relatedsites-desc' => '在侧栏上添加相关站点的链接',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'relatedsites-title' => '相關網站',
+	'relatedsites-desc' => '側欄上添加鏈接到相關網站',
+);
