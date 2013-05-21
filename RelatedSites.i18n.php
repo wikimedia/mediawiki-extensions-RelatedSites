@@ -130,6 +130,13 @@ $messages['ko'] = array(
 	'relatedsites-desc' => '사이드바에 관련된 사이트의 링크 추가',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'relatedsites-title' => 'Verbonn Siten',
+);
+
 /** Minangkabau (Baso Minangkabau)
  * @author Iwan Novirion
  */
