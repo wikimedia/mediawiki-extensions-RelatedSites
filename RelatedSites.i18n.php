@@ -99,6 +99,14 @@ $messages['hsb'] = array(
 	'relatedsites-desc' => 'Přidawa wotkaz k přiwuznym sydłam na bóčnicy',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'relatedsites-title' => 'Dagiti mainaig a sitio',
+	'relatedsites-desc' => 'Agnayon ti silpo kadagiti mainaig a sitio iti igid a baras',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
