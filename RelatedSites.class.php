@@ -166,7 +166,7 @@ class RelatedSites {
 			Html::closeElement( 'ul' ) .
 			Html::closeElement( 'div' ) .
 			Html::closeElement( 'div' ) .
-			Html::openElement( 'div', array( 'id' => 'p-lang', 'class' => 'portal' ) ) .
+			Html::openElement( 'div', array( 'id' => 'p-relatedsites', 'class' => 'portal' ) ) .
 			Html::element( 'h5', array(), wfMessage( 'relatedsites-title' )->text() ) .
 			Html::openElement( 'div', array( 'class' => 'body' ) ) .
 			Html::openElement( 'ul', array( 'class' => 'body' ) ) .
