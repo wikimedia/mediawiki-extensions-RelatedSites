@@ -75,6 +75,14 @@ $messages['fr'] = array(
 	'relatedsites-desc' => 'Ajoute un lien vers les sites connexes dans la sidebar',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'relatedsites-title' => 'Ferbünjen sidjen',
+	'relatedsites-desc' => 'Ütjwidjet mögelkhaid, am ferbünjen sidjen uun det sidjenmenu uuntuwisin',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
