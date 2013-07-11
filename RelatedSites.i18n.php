@@ -60,6 +60,14 @@ $messages['es'] = array(
 	'relatedsites-desc' => 'Añace un enlace a los sitios relacionados en la barra lateral',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'relatedsites-title' => 'سایت‌های مرتبط',
+	'relatedsites-desc' => 'اضافه کردن پیوند به سایت‌های مرتبط در نوار کناری',
+);
+
 /** Finnish (suomi)
  * @author VezonThunder
  */
