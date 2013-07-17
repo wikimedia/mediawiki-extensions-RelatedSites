@@ -234,6 +234,14 @@ $messages['si'] = array(
 	'relatedsites-title' => 'ආශ්‍රිත අඩවි',
 );
 
+/** Swedish (svenska)
+ * @author Jopparn
+ */
+$messages['sv'] = array(
+	'relatedsites-title' => 'Relaterade sidor',
+	'relatedsites-desc' => 'Lägger till en länk till relaterade sidor i sidofältet',
+);
+
 /** Tamil (தமிழ்)
  * @author Shanmugamp7
  */
