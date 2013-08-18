@@ -151,7 +151,7 @@ $messages['ka'] = array(
  */
 $messages['ko'] = array(
 	'relatedsites-title' => '관련 사이트',
-	'relatedsites-desc' => '사이드바에 관련된 사이트의 링크 추가',
+	'relatedsites-desc' => '사이드바에 관련된 사이트의 링크를 추가합니다',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
