@@ -169,7 +169,7 @@ class RelatedSites {
 			Html::openElement( 'div', array( 'id' => 'p-relatedsites', 'class' => 'portal' ) ) .
 			Html::element( 'h3', array(), wfMessage( 'relatedsites-title' )->text() ) .
 			Html::openElement( 'div', array( 'class' => 'body' ) ) .
-			Html::openElement( 'ul', array( 'class' => 'body' ) ) .
+			Html::openElement( 'ul' ) .
 			implode( '', $relatedSites );
 
 		return true;
