@@ -266,10 +266,11 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'relatedsites-title' => '相关站点',
+	'relatedsites-title' => '相关网站',
 	'relatedsites-desc' => '在侧栏上添加相关站点的链接',
 );
 
