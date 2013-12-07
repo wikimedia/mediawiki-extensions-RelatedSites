@@ -38,7 +38,7 @@ $messages['br'] = array(
 	'relatedsites-desc' => "Ouzhpennañ ul liamm er barenn-gostez davet al lec'hiennoù kar",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Vks
  */
 $messages['cs'] = array(
