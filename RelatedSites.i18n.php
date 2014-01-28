@@ -45,6 +45,14 @@ $messages['cs'] = array(
 	'relatedsites-title' => 'Související stránky',
 );
 
+/** Danish (dansk)
+ * @author Christian List
+ */
+$messages['da'] = array(
+	'relatedsites-title' => 'Relaterede sites',
+	'relatedsites-desc' => 'Tilføjer et link til relaterede sites i venstre side',
+);
+
 /** German (Deutsch)
  */
 $messages['de'] = array(
