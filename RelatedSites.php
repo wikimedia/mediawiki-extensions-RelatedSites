@@ -8,6 +8,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgAutoloadClasses['RelatedSites'] = __DIR__ . '/RelatedSites.class.php';
 
 // extension & magic words i18n
+$wgMessagesDirs['RelatedSites'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['RelatedSites'] = __DIR__ . '/RelatedSites.i18n.php';
 
 // hooks
