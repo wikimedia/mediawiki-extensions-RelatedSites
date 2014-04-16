@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "relatedsites-title": "Sitios relacionados",
-    "relatedsites-desc": "Engade unha ligazón cara aos sitios relacionados na barra lateral"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"relatedsites-title": "Sitios relacionados",
+	"relatedsites-desc": "Engade unha ligazón cara aos sitios relacionados na barra lateral"
 }

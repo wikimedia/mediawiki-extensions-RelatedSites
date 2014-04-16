@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Base"
-        ]
-    },
-    "relatedsites-title": "Пов'язані сайти",
-    "relatedsites-desc": "Додає посилання на пов'язані сайти на бічну панель"
+	"@metadata": {
+		"authors": [
+			"Base"
+		]
+	},
+	"relatedsites-title": "Пов'язані сайти",
+	"relatedsites-desc": "Додає посилання на пов'язані сайти на бічну панель"
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Simon Shek"
-        ]
-    },
-    "relatedsites-title": "相關網站",
-    "relatedsites-desc": "側欄上添加鏈接到相關網站"
+	"@metadata": {
+		"authors": [
+			"Simon Shek"
+		]
+	},
+	"relatedsites-title": "相關網站",
+	"relatedsites-desc": "側欄上添加鏈接到相關網站"
 }
