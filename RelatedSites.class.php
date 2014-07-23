@@ -78,9 +78,34 @@ class RelatedSites {
 
 			$title = Title::newFromText( $site );
 			if ( $title ) {
+				// Use the same system message keys as the core $wgExtraInterlanguageLinkPrefixes feature
+				$linkTextMsg = wfMessage( 'interlanguage-link-' . $title->getInterwiki() );
+				$linkText = $linkTextMsg->isDisabled() ?
+					( Language::fetchLanguageName( $title->getInterwiki() ) ?: $site ) :
+					$linkTextMsg->text();
+
+				// This logic is essentially copied from core SkinTemplate#getLanguages
+				$linkTitle = null;
+				$linkTitleMsg = wfMessage( 'interlanguage-link-sitename-' . $title->getInterwiki() );
+				if ( !$linkTitleMsg->isDisabled() ) {
+					if ( $title->getText() === '' ) {
+						$linkTitle = wfMessage(
+							'interlanguage-link-title-nonlangonly',
+							$linkTitleMsg->text()
+						)->text();
+					} else {
+						$linkTitle = wfMessage(
+							'interlanguage-link-title-nonlang',
+							$title->getText(),
+							$linkTitleMsg->text()
+						)->text();
+					}
+				}
+
 				$relatedSitesUrls[] = array(
 					'href' => $title->getFullURL(),
-					'text' => Language::fetchLanguageName( $title->getInterwiki() ) ?: $site,
+					'text' => $linkText,
+					'title' => $linkTitle,
 					'class' => 'interwiki-' . $tmp[0]
 				);
 			}
@@ -148,6 +173,9 @@ class RelatedSites {
 		foreach ( (array) $relatedSitesUrls as $url ) {
 			$attributes = array();
 			$attributes['href'] = htmlspecialchars( $url['href'] );
+			if ( !empty( $url['title'] ) ) {
+				$attributes['title'] = htmlspecialchars( $url['title'] );
+			}
 
 			if ( $url['text'] == $wgSitename ) {
 				$attributes['rel'] = 'nofollow';
