@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Raymond",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
 	"relatedsites-title": "Link in the sidebar to go to related sites",
-	"relatedsites-desc": "{{desc|name=Related Sites|url=http://www.mediawiki.org/wiki/Extension:RelatedSites}}"
+	"relatedsites-desc": "{{desc|name=Related Sites|url=https://www.mediawiki.org/wiki/Extension:RelatedSites}}"
 }
