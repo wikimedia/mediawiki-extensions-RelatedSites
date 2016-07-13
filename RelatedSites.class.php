@@ -1,22 +1,9 @@
 <?php
 
 class RelatedSites {
-	/**
-	 * @throws Exception
-	 * @return CustomData
-	 */
-	private static function getCustomData() {
-		global $wgCustomData;
-
-		if ( !$wgCustomData instanceof CustomData ) {
-			throw new Exception( 'CustomData extension is not properly installed.' );
-		}
-
-		return $wgCustomData;
-	}
 
 	/**
-	 * After parsing is done, store the $mRelatedSitesSet in $wgCustomData.
+	 * After parsing is done, store the related sites set in extension data.
 	 *
 	 * @param Parser $parser
 	 * @param string $text
@@ -41,30 +28,30 @@ class RelatedSites {
 		}
 
 		if ( $relatedSitesSet ) {
-			self::getCustomData()->setParserData( $parser->getOutput(), 'RelatedSites', $relatedSitesSet );
+			$parser->getOutput()->setExtensionData( 'RelatedSites', $relatedSitesSet );
 		}
 
 		return true;
 	}
 
 	/**
-	 * Preprocess relatedsites links.
-	 *
-	 * @param SkinTemplate $skinTpl
-	 * @param QuickTemplate $quickTpl
+	 * @param OutputPage $out
+	 * @param ParserOutput $parserOutput
 	 * @return bool
 	 */
-	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTpl, &$quickTpl ) {
-		global $wgOut;
+	public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
+		$related = $parserOutput->getExtensionData( 'RelatedSites' );
 
-		$customData = self::getCustomData();
-
-		// Fill the RelatedSites array.
-		$relatedSites = $customData->getPageData( $wgOut, 'RelatedSites' );
-		$customData->setSkinData( $quickTpl, 'RelatedSites', $relatedSites );
+		if ( $related ) {
+			$out->setProperty( 'RelatedSites', $related );
+		} elseif ( isset( $parserOutput->mCustomData['RelatedSites'] ) ) {
+			// back-compat: Check for CustomData stuff
+			$out->setProperty( 'RelatedSites', $parserOutput->mCustomData['RelatedSites'] );
+		}
 
 		return true;
 	}
+
 
 	/**
 	 * @param array $relatedSites
@@ -122,10 +109,9 @@ class RelatedSites {
 	 * @return bool
 	 */
 	public static function onSkinBuildSidebar( $skin, &$bar ) {
-		$out = $skin->getOutput();
-		$relatedSites = self::getCustomData()->getParserData( $out, 'RelatedSites' );
+		$relatedSites = $skin->getOutput()->getProperty( 'RelatedSites' );
 
-		if ( count( $relatedSites ) == 0 ) {
+		if ( !$relatedSites ) {
 			return true;
 		}
 
@@ -154,15 +140,15 @@ class RelatedSites {
 	/**
 	 * Write out HTML-code.
 	 *
-	 * @param SkinTemplate|VectorTemplate $skinTpl
+	 * @param SkinTemplate $skinTpl
 	 * @return bool
 	 */
 	public static function onSkinTemplateToolboxEnd( &$skinTpl ) {
 		global $wgSitename;
 
-		$relatedSites = self::getCustomData()->getSkinData( $skinTpl, 'RelatedSites' );
+		$relatedSites = $skinTpl->getOutput()->getProperty( 'RelatedSites' );
 
-		if ( count( $relatedSites ) == 0 ) {
+		if ( !$relatedSites ) {
 			return true;
 		}
 
