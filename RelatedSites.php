@@ -12,15 +12,9 @@ $wgMessagesDirs['RelatedSites'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['RelatedSites'] = __DIR__ . '/RelatedSites.i18n.php';
 
 // hooks
-$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'RelatedSites::onSkinTemplateOutputPageBeforeExec';
 $wgHooks['ParserBeforeTidy'][] = 'RelatedSites::onParserBeforeTidy';
-
-// @TODO Add a global to control these, and then probably use wgExtensionFunctions hook
-// 2 same hooks, with different position though - enable what you want
-// the first one is a "clean" solution, but has its content inserted _before_ the toolbox
-//$wgHooks['SkinBuildSidebar'][] = 'RelatedSites::onSkinBuildSidebar';
-// the second one is nasty: echo'ing raw html _after_ the regular toolbox
-$wgHooks['SkinTemplateToolboxEnd'][] = 'RelatedSites::onSkinTemplateToolboxEnd';
+$wgHooks['OutputPageParserOutput'][] = 'RelatedSites::onOutputPageParserOutput';
+$wgHooks['SidebarBeforeOutput'][] = 'RelatedSites::onSidebarBeforeOutput';
 
 // credits
 $wgExtensionCredits['parserhook'][] = array(
