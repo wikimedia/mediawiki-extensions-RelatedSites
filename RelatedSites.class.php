@@ -5,7 +5,7 @@ class RelatedSites {
 	 * @throws Exception
 	 * @return CustomData
 	 */
-	public function getCustomData() {
+	private static function getCustomData() {
 		global $wgCustomData;
 
 		if ( !$wgCustomData instanceof CustomData ) {
@@ -22,7 +22,7 @@ class RelatedSites {
 	 * @param string $text
 	 * @return bool
 	 */
-	public function onParserBeforeTidy( Parser &$parser, &$text ) {
+	public static function onParserBeforeTidy( Parser &$parser, &$text ) {
 		global $wgRelatedSitesPrefixes;
 
 		if ( !$wgRelatedSitesPrefixes ) {
@@ -41,7 +41,7 @@ class RelatedSites {
 		}
 
 		if ( $relatedSitesSet ) {
-			$this->getCustomData()->setParserData( $parser->getOutput(), 'RelatedSites', $relatedSitesSet );
+			self::getCustomData()->setParserData( $parser->getOutput(), 'RelatedSites', $relatedSitesSet );
 		}
 
 		return true;
@@ -54,10 +54,10 @@ class RelatedSites {
 	 * @param QuickTemplate $quickTpl
 	 * @return bool
 	 */
-	public function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTpl, &$quickTpl ) {
+	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTpl, &$quickTpl ) {
 		global $wgOut;
 
-		$customData = $this->getCustomData();
+		$customData = self::getCustomData();
 
 		// Fill the RelatedSites array.
 		$relatedSites = $customData->getPageData( $wgOut, 'RelatedSites' );
@@ -70,7 +70,7 @@ class RelatedSites {
 	 * @param array $relatedSites
 	 * @return array
 	 */
-	protected function getRelatedSitesUrls( array $relatedSites ) {
+	protected static function getRelatedSitesUrls( array $relatedSites ) {
 		$relatedSitesUrls = array();
 
 		foreach ( $relatedSites as $site ) {
@@ -121,15 +121,15 @@ class RelatedSites {
 	 * @param array $bar
 	 * @return bool
 	 */
-	public function onSkinBuildSidebar( $skin, &$bar ) {
+	public static function onSkinBuildSidebar( $skin, &$bar ) {
 		$out = $skin->getOutput();
-		$relatedSites = $this->getCustomData()->getParserData( $out, 'RelatedSites' );
+		$relatedSites = self::getCustomData()->getParserData( $out, 'RelatedSites' );
 
 		if ( count( $relatedSites ) == 0 ) {
 			return true;
 		}
 
-		$relatedSitesUrls = $this->getRelatedSitesUrls( $relatedSites );
+		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
 
 		// build relatedsites <li>'s
 		$relatedSites = array();
@@ -157,16 +157,16 @@ class RelatedSites {
 	 * @param SkinTemplate|VectorTemplate $skinTpl
 	 * @return bool
 	 */
-	public function onSkinTemplateToolboxEnd( &$skinTpl ) {
+	public static function onSkinTemplateToolboxEnd( &$skinTpl ) {
 		global $wgSitename;
 
-		$relatedSites = $this->getCustomData()->getSkinData( $skinTpl, 'RelatedSites' );
+		$relatedSites = self::getCustomData()->getSkinData( $skinTpl, 'RelatedSites' );
 
 		if ( count( $relatedSites ) == 0 ) {
 			return true;
 		}
 
-		$relatedSitesUrls = $this->getRelatedSitesUrls( $relatedSites );
+		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
 
 		// build relatedsites <li>'s
 		$relatedSites = array();
