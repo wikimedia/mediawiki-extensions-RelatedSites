@@ -1,0 +1,29 @@
+{
+	"name": "RelatedSites",
+	"version": "2.0",
+	"author": [
+		"Roland Unger",
+		"Hans Musil",
+		"Matthias Mullie"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:RelatedSites",
+	"descriptionmsg": "relatedsites-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"RelatedSites": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"RelatedSites": "RelatedSites.class.php"
+	},
+	"Hooks": {
+		"ParserBeforeTidy": "RelatedSites::onParserBeforeTidy",
+		"OutputPageParserOutput": "RelatedSites::onOutputPageParserOutput",
+		"SidebarBeforeOutput": "RelatedSites::onSidebarBeforeOutput"
+	},
+	"config": {
+		"RelatedSitesPrefixes": []
+	},
+	"manifest_version": 1
+}
