@@ -23,10 +23,10 @@ $wgHooks['ParserBeforeTidy'][] = 'RelatedSites::onParserBeforeTidy';
 $wgHooks['SkinTemplateToolboxEnd'][] = 'RelatedSites::onSkinTemplateToolboxEnd';
 
 // credits
-$wgExtensionCredits['parserhook']['RelatedSites'] = array(
+$wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'RelatedSites',
-	'url' => '//www.mediawiki.org/wiki/Extension:RelatedSites',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:RelatedSites',
 	'descriptionmsg' => 'relatedsites-desc',
 	'author' => array( 'Roland Unger', 'Hans Musil', 'Matthias Mullie' ),
 	'version' => '1.1'
