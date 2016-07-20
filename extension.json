@@ -9,6 +9,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:RelatedSites",
 	"descriptionmsg": "relatedsites-desc",
 	"type": "parserhook",
+	"license-name": "GPL-2.0",
 	"MessagesDirs": {
 		"RelatedSites": [
 			"i18n"
