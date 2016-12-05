@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Araceletorres"
+			"Araceletorres",
+			"!Silent"
 		]
 	},
-	"relatedsites-title": "Sites relacionados"
+	"relatedsites-title": "Sites relacionados",
+	"relatedsites-desc": "Adiciona um link na barra lateral aos sites relacionados"
 }
