@@ -129,7 +129,7 @@ class RelatedSites {
 	 * @return bool
 	 */
 	public static function onSidebarBeforeOutput( $skin, &$bar ) {
-		$relatedSites = $skin->getOutput()->getProperty( 'RelatedSites' );
+		$relatedSites = $skin->getOutput()->getProperty( 'RelatedSites' ) ?: [];
 
 		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
 
