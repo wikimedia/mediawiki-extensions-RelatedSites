@@ -80,6 +80,11 @@ class RelatedSites {
 
 			$title = Title::newFromText( $site );
 			if ( $title ) {
+				// HACK: DMOZ is dead, don't display links to it
+				if ( $title->getInterwiki() === 'dmoz' ) {
+					continue;
+				}
+
 				// Use the same system message keys as the core $wgExtraInterlanguageLinkPrefixes feature
 				$linkTextMsg = wfMessage( 'interlanguage-link-' . $title->getInterwiki() );
 				$linkText = $linkTextMsg->isDisabled() ?
@@ -126,11 +131,11 @@ class RelatedSites {
 	public static function onSidebarBeforeOutput( $skin, &$bar ) {
 		$relatedSites = $skin->getOutput()->getProperty( 'RelatedSites' );
 
-		if ( !$relatedSites ) {
+		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
+
+		if ( !$relatedSitesUrls ) {
 			return true;
 		}
-
-		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
 
 		// build relatedsites <li>'s
 		$relatedSites = array();
