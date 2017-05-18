@@ -67,13 +67,12 @@ class RelatedSites {
 		return true;
 	}
 
-
 	/**
 	 * @param array $relatedSites
 	 * @return array
 	 */
 	protected static function getRelatedSitesUrls( array $relatedSites ) {
-		$relatedSitesUrls = array();
+		$relatedSitesUrls = [];
 
 		foreach ( $relatedSites as $site ) {
 			$tmp = explode( ':', $site, 2 );
@@ -109,12 +108,12 @@ class RelatedSites {
 					}
 				}
 
-				$relatedSitesUrls[] = array(
+				$relatedSitesUrls[] = [
 					'href' => $title->getFullURL(),
 					'text' => $linkText,
 					'title' => $linkTitle,
 					'class' => 'interwiki-' . $tmp[0]
-				);
+				];
 			}
 		}
 
@@ -138,11 +137,11 @@ class RelatedSites {
 		}
 
 		// build relatedsites <li>'s
-		$relatedSites = array();
+		$relatedSites = [];
 		foreach ( (array) $relatedSitesUrls as $url ) {
 			$relatedSites[] =
-				Html::rawElement( 'li', array( 'class' => htmlspecialchars( $url['class'] ) ),
-					Html::rawElement( 'a', array( 'href' => htmlspecialchars( $url['href'] ) ),
+				Html::rawElement( 'li', [ 'class' => htmlspecialchars( $url['class'] ) ],
+					Html::rawElement( 'a', [ 'href' => htmlspecialchars( $url['href'] ) ],
 						$url['text']
 					)
 				);
@@ -150,7 +149,7 @@ class RelatedSites {
 
 		// build complete html
 		$bar[$skin->msg( 'relatedsites-title' )->text()] =
-			Html::rawElement( 'ul', array(),
+			Html::rawElement( 'ul', [],
 				implode( '', $relatedSites )
 			);
 
