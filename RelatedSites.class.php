@@ -138,7 +138,7 @@ class RelatedSites {
 
 		// build relatedsites <li>'s
 		$relatedSites = [];
-		foreach ( (array) $relatedSitesUrls as $url ) {
+		foreach ( (array)$relatedSitesUrls as $url ) {
 			$relatedSites[] =
 				Html::rawElement( 'li', [ 'class' => htmlspecialchars( $url['class'] ) ],
 					Html::rawElement( 'a', [ 'href' => htmlspecialchars( $url['href'] ) ],
