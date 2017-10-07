@@ -22,8 +22,8 @@ class RelatedSites {
 	/**
 	 * After parsing is done, store the related sites set in extension data.
 	 *
-	 * @param Parser $parser
-	 * @param string $text
+	 * @param Parser &$parser
+	 * @param string &$text
 	 * @return bool
 	 */
 	public static function onParserBeforeTidy( Parser &$parser, &$text ) {
@@ -50,7 +50,7 @@ class RelatedSites {
 	}
 
 	/**
-	 * @param OutputPage $out
+	 * @param OutputPage &$out
 	 * @param ParserOutput $parserOutput
 	 * @return bool
 	 */
@@ -124,7 +124,7 @@ class RelatedSites {
 	 * Write out HTML-code.
 	 *
 	 * @param Skin $skin
-	 * @param array $bar
+	 * @param array &$bar
 	 * @return bool
 	 */
 	public static function onSidebarBeforeOutput( $skin, &$bar ) {
