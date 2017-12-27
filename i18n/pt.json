@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
 	"relatedsites-title": "Sítios relacionados",
-	"relatedsites-desc": "Adiciona uma ligação na barra lateral aos sítios relacionados"
+	"relatedsites-desc": "Adiciona na barra lateral uma hiperligação para ''sites'' relacionados"
 }
