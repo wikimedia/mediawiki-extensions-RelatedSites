@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"relatedsites-title": "Sítios relacionados",
-	"relatedsites-desc": "Adiciona na barra lateral uma hiperligação para ''sites'' relacionados"
+	"relatedsites-desc": "Adiciona na barra lateral uma hiperligação para sítios relacionados"
 }
