@@ -23,6 +23,9 @@
 		"OutputPageParserOutput": "RelatedSites::onOutputPageParserOutput",
 		"SidebarBeforeOutput": "RelatedSites::onSidebarBeforeOutput"
 	},
+	"TrackingCategories": [
+		"relatedsites-tracking-category"
+	],
 	"config": {
 		"RelatedSitesPrefixes": []
 	},

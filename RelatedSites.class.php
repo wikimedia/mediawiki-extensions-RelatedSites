@@ -44,6 +44,7 @@ class RelatedSites {
 
 		if ( $relatedSitesSet ) {
 			$parser->getOutput()->setExtensionData( 'RelatedSites', $relatedSitesSet );
+			$parser->addTrackingCategory( 'relatedsites-tracking-category' );
 		}
 
 		return true;
