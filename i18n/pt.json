@@ -7,5 +7,6 @@
 		]
 	},
 	"relatedsites-title": "Sítios relacionados",
-	"relatedsites-desc": "Adiciona na barra lateral uma hiperligação para sítios relacionados"
+	"relatedsites-desc": "Adiciona na barra lateral uma hiperligação para sítios relacionados",
+	"relatedsites-tracking-category": "Páginas que usam RelatedSites"
 }

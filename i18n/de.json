@@ -1,5 +1,10 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
 	"relatedsites-title": "Verwandte Sites",
-	"relatedsites-desc": "Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar"
+	"relatedsites-desc": "Erweiterung für die Ausgabe von verwandten Websites auf der Sidebar",
+	"relatedsites-tracking-category": "Seiten, die RelatedSites verwenden"
 }

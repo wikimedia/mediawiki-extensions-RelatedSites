@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Guycn2"
 		]
 	},
 	"relatedsites-title": "אתרים קשורים",
-	"relatedsites-desc": "הוספת קישור לאתרים קשורים בסרגל הצד"
+	"relatedsites-desc": "הוספת קישור לאתרים קשורים בסרגל הצד",
+	"relatedsites-tracking-category": "דפים המשתמשים בהרחבה RelatedSites"
 }
