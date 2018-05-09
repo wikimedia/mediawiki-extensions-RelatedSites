@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"relatedsites-title": "관련 사이트",
-	"relatedsites-desc": "사이드바에 관련된 사이트의 링크를 추가합니다"
+	"relatedsites-desc": "사이드바에 관련된 사이트의 링크를 추가합니다",
+	"relatedsites-tracking-category": "RelatedSites를 사용하는 문서"
 }
