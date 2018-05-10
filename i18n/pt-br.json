@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Araceletorres",
-			"!Silent"
+			"!Silent",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"relatedsites-title": "Sites relacionados",
-	"relatedsites-desc": "Adiciona um link na barra lateral aos sites relacionados"
+	"relatedsites-desc": "Adiciona um link na barra lateral aos sites relacionados",
+	"relatedsites-tracking-category": "Páginas que usam RelatedSites"
 }
