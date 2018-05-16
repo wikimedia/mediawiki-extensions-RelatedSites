@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jopparn"
+			"Jopparn",
+			"WikiPhoenix"
 		]
 	},
 	"relatedsites-title": "Relaterade sidor",
-	"relatedsites-desc": "Lägger till en länk till relaterade sidor i sidofältet"
+	"relatedsites-desc": "Lägger till en länk till relaterade sidor i sidofältet",
+	"relatedsites-tracking-category": "Sidor som använder RelatedSites"
 }
