@@ -24,36 +24,33 @@ class RelatedSites {
 	 *
 	 * @param Parser &$parser
 	 * @param string &$text
-	 * @return bool
 	 */
 	public static function onParserBeforeTidy( Parser &$parser, &$text ) {
 		global $wgRelatedSitesPrefixes;
 
 		if ( !$wgRelatedSitesPrefixes ) {
-			return true;
+			return;
 		}
 
-		$relatedSitesSet = $parser->getOutput()->getExtensionData( 'RelatedSites' ) ?: [];
-		foreach ( $parser->getOutput()->getLanguageLinks() as $i => $languageLink ) {
+		$po = $parser->getOutput();
+		$relatedSitesSet = $po->getExtensionData( 'RelatedSites' ) ?: [];
+		foreach ( $po->getLanguageLinks() as $i => $languageLink ) {
 			$tmp = explode( ':', $languageLink, 2 );
 			if ( in_array( $tmp[0], $wgRelatedSitesPrefixes ) ) {
-				unset( $parser->getOutput()->mLanguageLinks[$i] );
+				unset( $po->mLanguageLinks[$i] );
 				$relatedSitesSet[] = $languageLink;
 			}
 		}
 
 		if ( $relatedSitesSet ) {
-			$parser->getOutput()->setExtensionData( 'RelatedSites', $relatedSitesSet );
+			$po->setExtensionData( 'RelatedSites', $relatedSitesSet );
 			$parser->addTrackingCategory( 'relatedsites-tracking-category' );
 		}
-
-		return true;
 	}
 
 	/**
 	 * @param OutputPage &$out
 	 * @param ParserOutput $parserOutput
-	 * @return bool
 	 */
 	public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
 		$related = $parserOutput->getExtensionData( 'RelatedSites' );
@@ -64,8 +61,6 @@ class RelatedSites {
 			// back-compat: Check for CustomData stuff
 			$out->setProperty( 'RelatedSites', $parserOutput->mCustomData['RelatedSites'] );
 		}
-
-		return true;
 	}
 
 	/**
@@ -122,11 +117,10 @@ class RelatedSites {
 	}
 
 	/**
-	 * Write out HTML-code.
+	 * Write out HTML code.
 	 *
 	 * @param Skin $skin
 	 * @param array &$bar
-	 * @return bool
 	 */
 	public static function onSidebarBeforeOutput( $skin, &$bar ) {
 		$relatedSites = $skin->getOutput()->getProperty( 'RelatedSites' ) ?: [];
@@ -134,7 +128,7 @@ class RelatedSites {
 		$relatedSitesUrls = self::getRelatedSitesUrls( $relatedSites );
 
 		if ( !$relatedSitesUrls ) {
-			return true;
+			return;
 		}
 
 		// build relatedsites <li>'s
@@ -148,12 +142,10 @@ class RelatedSites {
 				);
 		}
 
-		// build complete html
+		// build complete HTML
 		$bar[$skin->msg( 'relatedsites-title' )->text()] =
 			Html::rawElement( 'ul', [],
 				implode( '', $relatedSites )
 			);
-
-		return true;
 	}
 }
