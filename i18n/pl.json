@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matma Rex"
+			"Matma Rex",
+			"Railfail536"
 		]
 	},
 	"relatedsites-title": "Powiązane serwisy",
-	"relatedsites-desc": "Dodaje link do powiązanych serwisów w menu bocznym"
+	"relatedsites-desc": "Dodaje link do powiązanych serwisów w menu bocznym",
+	"relatedsites-tracking-category": "Strony wykorzystujące powiązane serwisy"
 }
