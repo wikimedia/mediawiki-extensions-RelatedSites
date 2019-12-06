@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
+	"relatedsites-title": "İlgili siteler",
+	"relatedsites-desc": "Kenar çubuğundaki ilgili sitelere bağlantı ekler",
 	"relatedsites-tracking-category": "BağlantılıSiteler kullanan sayfalar"
 }
