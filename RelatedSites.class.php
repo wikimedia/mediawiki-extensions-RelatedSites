@@ -25,7 +25,7 @@ class RelatedSites {
 	 * @param Parser &$parser
 	 * @param string &$text
 	 */
-	public static function onParserBeforeTidy( Parser &$parser, &$text ) {
+	public static function onParserAfterTidy( Parser &$parser, &$text ) {
 		global $wgRelatedSitesPrefixes;
 
 		if ( !$wgRelatedSitesPrefixes ) {

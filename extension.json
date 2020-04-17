@@ -19,7 +19,7 @@
 		"RelatedSites": "RelatedSites.class.php"
 	},
 	"Hooks": {
-		"ParserBeforeTidy": "RelatedSites::onParserBeforeTidy",
+		"ParserAfterTidy": "RelatedSites::onParserAfterTidy",
 		"OutputPageParserOutput": "RelatedSites::onOutputPageParserOutput",
 		"SidebarBeforeOutput": "RelatedSites::onSidebarBeforeOutput"
 	},
