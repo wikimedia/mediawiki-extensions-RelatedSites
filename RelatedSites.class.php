@@ -57,9 +57,6 @@ class RelatedSites {
 
 		if ( $related ) {
 			$out->setProperty( 'RelatedSites', $related );
-		} elseif ( isset( $parserOutput->mCustomData['RelatedSites'] ) ) {
-			// back-compat: Check for CustomData stuff
-			$out->setProperty( 'RelatedSites', $parserOutput->mCustomData['RelatedSites'] );
 		}
 	}
 
