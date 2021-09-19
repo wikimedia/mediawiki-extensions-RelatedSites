@@ -16,7 +16,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"RelatedSites": "RelatedSites.class.php"
+		"RelatedSites": "includes/RelatedSites.php"
 	},
 	"Hooks": {
 		"ParserAfterTidy": "RelatedSites::onParserAfterTidy",
