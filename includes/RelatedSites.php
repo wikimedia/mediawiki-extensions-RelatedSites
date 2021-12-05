@@ -17,6 +17,8 @@
  * @file
  */
 
+use MediaWiki\MediaWikiServices;
+
 class RelatedSites {
 
 	/**
@@ -67,6 +69,8 @@ class RelatedSites {
 	protected static function getRelatedSitesUrls( array $relatedSites ) {
 		$relatedSitesUrls = [];
 
+		$languageNameUtils = MediaWikiServices::getInstance()->getLanguageNameUtils();
+
 		foreach ( $relatedSites as $site ) {
 			$tmp = explode( ':', $site, 2 );
 
@@ -80,7 +84,7 @@ class RelatedSites {
 				// Use the same system message keys as the core $wgExtraInterlanguageLinkPrefixes feature
 				$linkTextMsg = wfMessage( 'interlanguage-link-' . $title->getInterwiki() );
 				$linkText = $linkTextMsg->isDisabled() ?
-					( Language::fetchLanguageName( $title->getInterwiki() ) ?: $site ) :
+				( $languageNameUtils->getLanguageName( $title->getInterwiki() ) ?: $site ) :
 					$linkTextMsg->text();
 
 				// This logic is essentially copied from core SkinTemplate#getLanguages
