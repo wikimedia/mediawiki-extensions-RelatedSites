@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Manvydasz"
+			"Manvydasz",
+			"Nokeoo"
 		]
 	},
-	"relatedsites-title": "Susiję puslapiai"
+	"relatedsites-title": "Susiję puslapiai",
+	"relatedsites-desc": "Prideda nuorodą į susijusias svetaines šoninėje juostoje",
+	"relatedsites-tracking-category": "Puslapiai, naudojantys RelatedSites"
 }
