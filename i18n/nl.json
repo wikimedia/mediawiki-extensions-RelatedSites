@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Wiki13"
+			"Wiki13",
+			"McDutchie"
 		]
 	},
 	"relatedsites-title": "Gerelateerde sites",
-	"relatedsites-desc": "Voegt een koppeling toe naar gerelateerde sites in de navigatiekolom"
+	"relatedsites-desc": "Voegt een koppeling toe naar gerelateerde sites in de navigatiekolom",
+	"relatedsites-tracking-category": "Pagina's die RelatedSites gebruiken"
 }
