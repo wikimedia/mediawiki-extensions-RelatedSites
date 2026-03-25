@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"relatedsites-title": "Povezana m-ž mjesta",
-	"relatedsites-desc": "Na bočnoj traci dodaje poveznicu za povezana mrežna mjesta",
+	"relatedsites-desc": "Dodaje vezu do povezanih sajtova na bočnoj traci",
 	"relatedsites-tracking-category": "Stranici koje koriste Povezana mrežna mjesta"
 }
