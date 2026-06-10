@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Teslaton"
+			"Teslaton",
+			"Wizzard"
 		]
 	},
 	"relatedsites-title": "Súvisiace projekty",
-	"relatedsites-desc": "Pridává do bočného panelu odkaz na súvisiace projekty"
+	"relatedsites-desc": "Pridává do bočného panelu odkaz na súvisiace projekty",
+	"relatedsites-tracking-category": "Stránky používajúce RelatedSites"
 }
