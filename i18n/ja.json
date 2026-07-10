@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Tensama0415"
 		]
 	},
 	"relatedsites-title": "関連サイト",
-	"relatedsites-desc": "関連サイトへのリンクをサイドバーに追加する"
+	"relatedsites-desc": "関連サイトへのリンクをサイドバーに追加する",
+	"relatedsites-tracking-category": "RelatedSitesを使用するページ"
 }
